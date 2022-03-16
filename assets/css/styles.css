@@ -623,21 +623,21 @@ img {
     transition: .3s;
 }
 
-.services__model-content{
+.services__modal-content{
     position: relative;
     background-color: var(--container-color);
     padding: 1.5rem;
     border-radius: .5rem;
 }
 
-.services__model-services{
+.services__modal-services{
     display: flex;
     row-gap: 1rem;
     flex-direction: row;
 }
 
 
-.services__model-title{
+.services__modal-title{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-1-5);
@@ -652,12 +652,12 @@ img {
     cursor: pointer;
 }
 
-.services__model-icon{
+.services__modal-icon{
     color: var(--first-color);
     margin-right: var(--mb-0-25);
 }
 /* Active Modal */
-.active-model{
+.active-modal{
     opacity: 1;
     visibility: visible;
 }
