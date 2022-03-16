@@ -25,25 +25,62 @@ navLink.click(function () {
 });
 
 /*==================== SKILLS FOLD ====================*/
+
+
+/*
 $(".skills__arrow").each(function () {
 
 })
 
-
-/*$(".skills__header").mouseenter(function(){
-    if ($(".skills__list").css("height",0)){
-
-    }$(".skills__list").css("height",80)
+$("#frontEnd").click(function () {
+    $(".skills__content").css("height",100)
+});
+$("#frontEnd").mouseenter(function(){
+    alert("OK")
+    $(".skills__list").css("height",80)
 });
 
-$(".skills__header").mouseleave(function(){
+$(".skills__content").mouseleave(function(){
     if ($(".skills__list").css("height",80)){
 
     }$(".skills__list").css("height",0)
-});*/
+});
+*/
 
 /*==================== ACCORDION SKILLS ====================*/
+const skillsContent = document.getElementsByClassName("skills__content"),
+    skillsHeader = document.querySelectorAll(".skills__header")
 
+function toggleSkills() {
+    let  itemClass = this.parentNode.className
+
+    for ( var i = 0; i < skillsContent.length ;i++){
+        skillsContent[i].className = "skills__content skills__close"
+    }
+    if (itemClass == "skills__content skills__close"){
+        this.parentNode.className = "skills__content skills__open"
+    }
+}
+
+skillsHeader.forEach((el) =>{
+   el.addEventListener("click",toggleSkills)
+});
+/*================================================================*/
+/*const skillsContent = $(".skills__content"),
+    skillsHeader = $(".skills__header");
+
+function toggle() {
+    let itemClass = this.parentNode.className
+
+    for (let i = 0; i < skillsContent.length; i++) {
+     skillsContent[i].className  = "skills__content skills__close"
+    }
+    if (itemClass == "skills__content skills__close"){
+        this.parentNode.className = "skills__content skills__open"
+    }
+}
+
+skillsHeader.each("click",toggle());*/
 
 /*==================== QUALIFICATION TABS ====================*/
 $("#btnEducation").click(function () {
