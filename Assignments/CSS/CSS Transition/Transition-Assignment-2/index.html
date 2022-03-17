@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition 2</title>
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<style>
+    body>section{
+        position: relative;
+        background-color: #00A0C6;
+        height: 100vh;
+        width: 100vw;
+    }
+    body>section>div{
+        position: absolute;
+        height: 250px;
+        width: 250px;
+        background-color: #917a7a;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 100%;
+        border-top: 20px solid red;
+        border-left: 20px solid white;
+        border-bottom: 20px solid white;
+        border-right:20px solid white;
+
+    }
+    body>section>div>h3{
+        position: absolute;
+        height: 20px;
+        width: 60px;
+        color: white;
+        font-size: 20px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    body>section>div:hover{
+        transition-duration: 3s;
+        transform: rotate(360deg);
+    }
+    body>section>div:hover h3{
+        transition-duration: 3s;
+        transform: rotate(-360deg);
+    }
+
+</style>
+<body>
+<section>
+    <div>
+        <h3>ABCD</h3>
+    </div>
+</section>
+</body>
+</html>

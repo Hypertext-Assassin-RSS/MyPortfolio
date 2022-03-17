@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand  #ffff fs-3" href="dashboard-index.html"
+               style="font-family: 'Mochiy Pop P One', sans-serif;">
+                <img src="/assets/img/icon.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
+                Fresh Fruit
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="dashboard-index.html">Dashboard</a>
+                    <a class="nav-link " href="index.html">Order</a>
+                    <a class="nav-link" href="member-index.html">Members</a>
+                    <a class="nav-link active" aria-current="page" href="item-index.html">Item</a>
+                </div>
+            </div>
+        </div>
+        <div class="top-0 bottom-0 m-auto" style="right: 0 ; position: absolute;top: 0 ">
+            <!--Dayspedia.com widget-->
+            <div ampm="true" cityid="9947" class="DPDC bg-danger" host="https://dayspedia.com"
+                 id="dayspedia_widget_3d64e3541c092443"
+                 lang="en" nightsign="true" style="background-image: none;  "
+                 sun="false">
+
+                <style id="dayspedia_widget_3d64e3541c092443_style" media="screen">
+                    /*COMMON*/
+                    .DPDC {
+                        display: table;
+                        position: relative;
+                        box-sizing: border-box;
+                        font-size: 100.01%;
+                        font-style: normal;
+                        font-family: Arial;
+                        background-position: 50% 50%;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        overflow: hidden;
+                        user-select: none
+                    }
+
+                    .DPDCh, .DPDCd {
+                        width: fit-content;
+                        line-height: 1.4
+                    }
+
+                    .DPDCh {
+                        margin-bottom: 1em
+                    }
+
+                    .DPDCd {
+                        margin-top: .24em
+                    }
+
+                    .DPDCt {
+                        line-height: 1
+                    }
+
+                    .DPDCth, .DPDCtm, .DPDCts {
+                        display: inline-block;
+                        vertical-align: text-top;
+                        white-space: nowrap
+                    }
+
+                    .DPDCth {
+                        min-width: 1.15em
+                    }
+
+                    .DPDCtm, .DPDCts {
+                        min-width: 1.44em
+                    }
+
+                    .DPDCtm::before, .DPDCts::before {
+                        display: inline-block;
+                        content: ':';
+                        vertical-align: middle;
+                        margin: -.34em 0 0 -.07em;
+                        width: .32em;
+                        text-align: center;
+                        opacity: .72;
+                        filter: alpha(opacity=72)
+                    }
+
+                    .DPDCt12 {
+                        display: inline-block;
+                        vertical-align: text-top;
+                        font-size: 40%
+                    }
+
+                    .DPDCdm::after {
+                        content: ' '
+                    }
+
+                    .DPDCda::after {
+                        content: ', '
+                    }
+
+                    .DPDCdt {
+                        margin-right: .48em
+                    }
+
+                    .DPDCtn {
+                        display: inline-block;
+                        position: relative;
+                        width: 13px;
+                        height: 13px;
+                        border: 2px solid;
+                        border-radius: 50%;
+                        overflow: hidden
+                    }
+
+                    .DPDCtn > i {
+                        display: block;
+                        content: '';
+                        position: absolute;
+                        right: 33%;
+                        top: -5%;
+                        width: 85%;
+                        height: 85%;
+                        border-radius: 50%
+                    }
+
+                    .DPDCs {
+                        margin: .96em 0 0 -3px;
+                        font-size: 90%;
+                        line-height: 1;
+                        white-space: nowrap
+                    }
+
+                    .DPDCs sup {
+                        padding-left: .24em;
+                        font-size: 65%
+                    }
+
+                    .DPDCsl::before, .DPDCsl::after {
+                        display: inline-block;
+                        opacity: .4
+                    }
+
+                    .DPDCsl::before {
+                        content: '~';
+                        margin: 0 .12em
+                    }
+
+                    .DPDCsl::after {
+                        content: '~';
+                        margin: 0 .24em
+                    }
+
+                    .DPDCs svg {
+                        display: inline-block;
+                        vertical-align: bottom;
+                        width: 1.2em;
+                        height: 1.2em;
+                        opacity: .48
+                    }
+
+                    /*CUSTOM*/
+
+                    .DPDC {
+                        width: auto;
+                        padding: 7px;
+                        background-color: #ffffff;
+                        /*border: 1px solid #343434;*/
+                        border-radius: 8px
+                    }
+
+                    /* widget width, padding, background, border, rounded corners */
+                    .DPDCh {
+                        color: #007DBF;
+                        font-weight: normal
+                    }
+
+                    /* headline color, font-weight*/
+                    .DPDCt, .DPDCd {
+                        color: #343434;
+                        font-weight: bold
+                    }
+
+                    /* time & date color, font-weight */
+                    .DPDCtn {
+                        border-color: #343434
+                    }
+
+                    /* night-sign color = time & date color */
+                    .DPDCtn > i {
+                        background-color: #343434
+                    }
+
+                    /* night-sign color = time & date color */
+                    .DPDCt {
+                        font-size: 20px
+                    }
+
+                    /* time font-size */
+                    .DPDCh, .DPDCd {
+                        font-size: 16px
+                    }
+
+                    /* headline & date font-size */
+                </style>
+
+
+                <a class="DPl w-100" href="https://dayspedia.com/time/lk/Colombo/"
+                   style="display:block!important;text-decoration:none!important;border:none!important;cursor:pointer!important;background:transparent!important;line-height:0!important;text-shadow:none!important;position:absolute;z-index:1;top:0;right:0;bottom:0;left:0"
+                   target="_blank">
+                    <svg style="position:absolute;right:8px;bottom:0;width:16px;height:16px" viewbox="0 0 16 16"
+                         xmlns="http://www.w3.org/2000/svg">
+
+                    </svg>
+
+                </a>
+                <div class="DPDCh d-none"
+                     style="text-align: center; margin-left: auto; margin-right: auto; font-weight: bold; font-size: 12px;">
+                    Current Time in Colombo
+                </div>
+                <div class="DPDCt"
+                     style="text-align: center; margin-left: auto; margin-right: auto; font-weight: bold;">
+                    <span class="DPDCth">09</span><span class="DPDCtm">47</span><span class="DPDCts">14</span><span
+                        class="DPDCt12">pm</span>
+                </div>
+                <div class="DPDCd"
+                     style="text-align: center; margin-left: auto; margin-right: auto; font-weight: bold;">
+                    <span class="DPDCdt">Sun, January 23</span><span class="DPDCtn" style=""><i></i></span>
+                </div>
+
+                <div class="DPDCs" style="display: none; text-align: center; margin-left: auto; margin-right: auto;">
+		<span class="DPDCsr">
+			<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path
+                    d="M12,4L7.8,8.2l1.4,1.4c0,0,0.9-0.9,1.8-1.8V14h2c0,0,0-3.3,0-6.2l1.8,1.8l1.4-1.4L12,4z"></path><path
+                    d="M6.8,15.3L5,13.5l-1.4,1.4l1.8,1.8L6.8,15.3z M4,21H1v2h3V21z M20.5,14.9L19,13.5l-1.8,1.8l1.4,1.4L20.5,14.9z M20,21v2h3 v-2H20z M6.1,23C6,22.7,6,22.3,6,22c0-3.3,2.7-6,6-6s6,2.7,6,6c0,0.3,0,0.7-0.1,1H6.1z"></path></svg>
+			07:14<sup>am</sup>
+		</span>
+                    <span class="DPDCsl">12:03</span>
+                    <span class="DPDCss">
+			<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path
+                    d="M12,14L7.8,9.8l1.4-1.4c0,0,0.9,0.9,1.8,1.8V4h2c0,0,0,3.3,0,6.2l1.8-1.8l1.4,1.4L12,14z"></path><path
+                    d="M6.8,15.3L5,13.5l-1.4,1.4l1.8,1.8L6.8,15.3z M4,21H1v2h3V21z M20.5,14.9L19,13.5l-1.8,1.8l1.4,1.4L20.5,14.9z M20,21v2h3 v-2H20z M6.1,23C6,22.7,6,22.3,6,22c0-3.3,2.7-6,6-6s6,2.7,6,6c0,0.3,0,0.7-0.1,1H6.1z"></path></svg>
+			07:18<sup>pm</sup>
+		</span>
+                </div>
+                <script>
+                    var s, t;
+                    s = document.createElement("script");
+                    s.type = "text/javascript";
+                    s.src = "//cdn.dayspedia.com/js/dwidget.min.v7c6abcf8.js";
+                    t = document.getElementsByTagName('script')[0];
+                    t.parentNode.insertBefore(s, t);
+                    s.onload = function () {
+                        window.dwidget = new window.DigitClock();
+                        window.dwidget.init("dayspedia_widget_3d64e3541c092443");
+                    };
+                </script>
+                <!--/DPDC-->
+            </div><!--Dayspedia.com widget ENDS-->
+
+        </div>
+    </nav>
+</header>
+<div id="item" style="display: inline">
+    <section class="d-flex justify-content-evenly position-relative" style="height: 90vh;width: 100vw">
+        <section class="d-flex flex-column justify-content-center" style="width: 50vw">
+            <div class="">
+
+                <div class="mb-3">
+
+                    <label class="col-form-label" for="search"
+                           style="font-family: 'Source Serif 4', sans-serif; font-size: 30px">Search</label>
+
+                    <input class="form-control w-50" id="Search" type="text">
+                    <button class="btn btn-dark mt-3">Search</button>
+                    <hr>
+                </div>
+
+            </div>
+            <section class="m-5 position-relative h-50" style="width:100%;">
+                <table class="table table-hover w-100">
+                    <thead>
+                    <tr>
+                        <th scope="col">Item</th>
+                        <th scope="col">QTY</th>
+                        <th scope="col">Single Price</th>
+                    </tr>
+                    </thead>
+                    <tbody id="itemTable">
+
+                    </tbody>
+                </table>
+            </section>
+        </section>
+        <div class="w-25 h-75 position-relative" style="top: 60px">
+            <form>
+                <div class="mb-3">
+                    <label class="col-form-label" for="item-name">Item:</label>
+                    <input class="form-control" id="item-name" type="text">
+                    <small id="error1">Last 2 Character Long</small>
+                </div>
+                <div class="mb-3">
+                    <label class="col-form-label" for="QTY">QTY:</label>
+                    <input class="form-control" id="QTY" type="text">
+                    <small id="error2">Only Numbers</small>
+                </div>
+                <div class="mb-3">
+                    <label class="col-form-label" for="singlePrice">Single Price:</label>
+                    <input class="form-control" id="singlePrice" type="text">
+                    <small id="error3">Only Numbers</small>
+                </div>
+            </form>
+            <div class="d-flex w-100 justify-content-evenly">
+                <button class="btn btn-warning w-25" type="button" id="btnSave">SAVE</button>
+                <button class="btn btn-danger w-25" type="button" id="btnClear">CLEAR</button>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script>
+    $('#btnSave').prop("disabled", true);
+    $("#btnClear").prop("disabled",true);
+
+    $("#singlePrice").val("Rs:")
+
+    $('#btnSave').click(function () {
+
+        $('#itemTable>tr').off("click", "dblclick")
+
+        let Item = $('#item-name').val();
+        let QTY = $('#QTY').val();
+        let SinglePrice = $('#singlePrice').val();
+
+        let row = `<tr><td>${Item}</td><td>${QTY}</td><td>${SinglePrice}</td></tr>`;
+
+        $('#itemTable').append(row);
+
+        $('#btnSave').prop("disabled", true);
+
+        $('#itemTable>tr').dblclick(function () {
+            $(this).remove();
+        });
+
+        $('#itemTable>tr').click(function () {
+            let item = $(this).children(":nth-child(1)").text();
+            let qty = $(this).children(":nth-child(2)").text();
+            let price = $(this).children(":nth-child(3)").text();
+
+            $('#item-name').val(item);
+            $('#QTY').val(qty);
+            $('#singlePrice').val(price);
+        });
+    });
+
+    $("#item-name").keyup(function (event) {
+
+        let RegExp = /^[A-z]{2,10}$/;
+        let input = $("#item-name").val();
+        if (RegExp.test(input)) {
+            $("#item-name").css("border", "2px solid blue");
+            $("#error1").text("  ");
+
+            $("#btnClear").prop("disabled",false);
+
+            if (event.key == "Enter") {
+                $("#QTY").focus();
+            }
+
+        } else {
+            $("#item-name").css("border", "2px solid red");
+            $("#error1").text("Least 2 Characters Need !");
+            $("#error1").css("color", "red");
+        }
+    });
+
+    $("#QTY").keyup(function (event) {
+
+        let RegExp = /^[0-9]{1,10}$/;
+        let input = $("#QTY").val();
+        if (RegExp.test(input)) {
+            $("#QTY").css("border", "2px solid blue");
+            $("#error2").text("  ");
+
+            $("#btnClear").prop("disabled",false);
+
+            if (event.key == "Enter") {
+                $("#singlePrice").focus();
+            }
+
+        } else {
+            $("#QTY").css("border", "2px solid red");
+            $("#error2").text("Only Numbers !");
+            $("#error2").css("color", "red");
+        }
+    });
+
+    $("#singlePrice").keyup(function (event) {
+
+        let RegExp = /^(Rs:)[0-9]{2,10}$/;
+        let input = $("#singlePrice").val();
+        if (RegExp.test(input)) {
+            $("#singlePrice").css("border", "2px solid blue");
+            $("#error3").text("  ");
+
+            $("#btnClear").prop("disabled",false);
+
+            $('#btnSave').prop("disabled", false);
+
+
+            if (event.key == "Enter") {
+                $("#btnSave").focus();
+            }
+        } else {
+            $("#singlePrice").css("border", "2px solid red");
+            $("#error3").text("Only Numbers !");
+            $("#error3").css("color", "red");
+        }
+    });
+
+
+    $("#btnClear").click(function () {
+        $("#item-name").val("");
+        $("#QTY").val("");
+        $("#singlePrice").val("");
+        $("#btnSave").prop("disabled",true);
+        $("#btnClear").prop("disabled",true);
+    });
+
+</script>
+</body>
+</html>

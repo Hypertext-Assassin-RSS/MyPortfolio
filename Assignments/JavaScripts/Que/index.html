@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Que</title>
+</head>
+<style>
+    body > div > section:nth-child(3) {
+        display: flex;
+        height: 50px;
+        position: relative;
+        justify-content: space-evenly;
+    }
+
+    body > div > section:nth-child(3) > div {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 50px;
+        width: 100px;
+        background-color: black;
+        border-radius: 7%;
+    }
+
+
+
+    body > div:nth-child(1) {
+        position: relative;
+        width: 800px;
+        height: 100px;
+        top: 370px;
+        margin: auto;
+    }
+    body > div:nth-child(1)>div:nth-child(1){
+        position: relative;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 50px;
+        width: 100px;
+        background-color: black;
+        right: 350px;
+        border-radius: 7%;
+    }
+    body > div:nth-child(1)>div:nth-child(5){
+        position: relative;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 50px;
+        width: 100px;
+        background-color: black;
+        left: 350px;
+        border-radius: 7%;
+    }
+
+</style>
+<body>
+<div>
+    <div id="box0"> </div>
+    <hr>
+    <section>
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+        <div id="box4"></div>
+        <div id="box5"></div>
+    </section>
+    <hr>
+    <div id="box6"></div>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+
+    function f1() {
+        $("#box0").css("background-color","pink");
+        $("#box1").css("background-color","red");
+        $("#box2").css("background-color","yellow");
+        $("#box3").css("background-color","blue");
+        $("#box4").css("background-color","deeppink");
+        $("#box5").css("background-color","orange");
+        $("#box6").css("background-color","black");
+        clearInterval(round1);
+    }
+
+    function f2() {
+        $("#box0").css("background-color","black");
+        $("#box1").css("background-color","pink");
+        $("#box2").css("background-color","red");
+        $("#box3").css("background-color","yellow");
+        $("#box4").css("background-color","blue");
+        $("#box5").css("background-color","deeppink");
+        $("#box6").css("background-color","orange");
+        clearInterval(round2);
+    }
+
+    function f3() {
+        $("#box0").css("background-color","orange");
+        $("#box1").css("background-color","black");
+        $("#box2").css("background-color","pink");
+        $("#box3").css("background-color","red");
+        $("#box4").css("background-color","yellow");
+        $("#box5").css("background-color","blue");
+        $("#box6").css("background-color","deeppink");
+        clearInterval(round3);
+    }
+    function f4() {
+        $("#box0").css("background-color","deeppink");
+        $("#box1").css("background-color","orange");
+        $("#box2").css("background-color","black");
+        $("#box3").css("background-color","pink");
+        $("#box4").css("background-color","red");
+        $("#box5").css("background-color","yellow");
+        $("#box6").css("background-color","blue");
+        clearInterval(round4);
+    }
+
+    function f5() {
+        $("#box0").css("background-color","blue");
+        $("#box1").css("background-color","deeppink");
+        $("#box2").css("background-color","orange");
+        $("#box3").css("background-color","black");
+        $("#box4").css("background-color","pink");
+        $("#box5").css("background-color","red");
+        $("#box6").css("background-color","yellow");
+        clearInterval(round5);
+    }
+
+    function f6() {
+        $("#box0").css("background-color","yellow");
+        $("#box1").css("background-color","blue");
+        $("#box2").css("background-color","deeppink");
+        $("#box3").css("background-color","orange");
+        $("#box4").css("background-color","black");
+        $("#box5").css("background-color","pink");
+        $("#box6").css("background-color","red");
+        clearInterval(round6);
+    }
+
+    function f7() {
+        $("#box0").css("background-color","red");
+        $("#box1").css("background-color","yellow");
+        $("#box2").css("background-color","blue");
+        $("#box3").css("background-color","deeppink");
+        $("#box4").css("background-color","orange");
+        $("#box5").css("background-color","black");
+        $("#box6").css("background-color","pink");
+        clearInterval(round7);
+        round1 = setInterval(f1,1000);
+        round2 = setInterval(f2,2000);
+        round3 = setInterval(f3,3000);
+        round4 = setInterval(f4,4000);
+        round5 = setInterval(f5,5000);
+        round6 = setInterval(f6,6000);
+        round7 = setInterval(f7,7000);
+    }
+
+    let round1 = setInterval(f1,1000);
+
+    let round2 = setInterval(f2,2000);
+
+    let round3 = setInterval(f3,3000);
+
+    let round4 = setInterval(f4,4000);
+
+    let round5 = setInterval(f5,5000);
+
+    let round6 = setInterval(f6,6000);
+
+    let round7 = setInterval(f7,7000);
+
+</script>
+</html>

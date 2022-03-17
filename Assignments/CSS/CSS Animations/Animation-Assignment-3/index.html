@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slide Show</title>
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<style>
+   main{
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        overflow: hidden;
+    }
+   section{
+       display: flex;
+       height: 100%;
+       width: 400%;
+       animation-name: slideme;
+       animation-duration: 120s;
+       animation-iteration-count: 3;
+   }
+   div{
+       width: 100%;
+   }
+   body>main>section>div:nth-child(1){
+       background: url("img/img24.jpg");
+       background-size: cover;
+       background-position: center;
+   }
+   body>main>section>div:nth-child(2){
+       background: url("img/img25.jpg");
+       background-size: cover;
+       background-position: center;
+   }
+   body>main>section>div:nth-child(3){
+       background: url("img/img26.jpg");
+       background-size: cover;
+       background-position: center;
+   }
+   body>main>section>div:nth-child(4){
+       background: url("img/img27.jpg");
+       background-size: cover;
+       background-position: center;
+   }
+   @keyframes slideme {
+       0%,2%{
+            transform: translateX(0);
+       }
+       10%{
+           transform: translateX(-25%);
+       }
+       20%{
+           transform: translateX(-50%);
+       }
+       30%{
+           transform: translateX(-75%);
+       }
+       40%{
+           transform: translateX(-50%);
+       }
+       50%{
+           transform: translateX(-25%);
+       }
+       60%{
+           transform: translateX(-0%);
+       }
+       70%{
+           transform: translateX(-25%);
+       }
+       80%{
+           transform: translateX(-50%);
+       }
+       90%{
+           transform: translateX(-75%);
+       }
+       100%{}
+   }
+</style>
+<body>
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+</body>
+</html>

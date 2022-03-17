@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Case 3</title>
+    <link rel="stylesheet" href="normalize.css">
+  </head>
+  <style>
+    section{
+      height:80px;
+      width: 180px;
+      position: absolute;
+      background-color: red;
+      border-radius: 20px;
+      animation-name: transform;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+    }
+    @keyframes transform {
+      0%{
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+        background-color: red;
+      }
+
+      25%{
+        top: 0;
+        left: 1280px;
+        transform: rotate(90deg);
+        background-color: deeppink;
+      }
+      50%{
+        left: 1280px;
+        top: 720px;
+        transform: rotate(180deg);
+        background-color: green;
+      }
+      75%{
+        left: 0px;
+        top: 720px;
+        transform: rotate(270deg);
+        background-color: yellow;
+      }
+      100%{
+        left: 0;
+        top: 0;
+        transform: rotate(360deg);
+      }
+
+    }
+  </style>
+  <body>
+      <section>
+
+      </section>
+  </body>
+</html>

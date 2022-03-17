@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Member</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand  #ffff fs-3" href="dashboard-index.html"
+               style="font-family: 'Mochiy Pop P One', sans-serif;">
+                <img alt="" class="d-inline-block align-text-top" height="40" src="/assets/img/icon.png" width="40">
+                Fresh Fruit
+            </a>
+            <button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                    data-bs-target="#navbarNavAltMarkup" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="dashboard-index.html">Dashboard</a>
+                    <a class="nav-link " href="index.html">Order</a>
+                    <a aria-current="page" class="nav-link active" href="member-index.html">Members</a>
+                    <a class="nav-link" href="item-index.html">Item</a>
+                </div>
+            </div>
+        </div>
+        <div class="top-0 bottom-0 m-auto" style="right: 0 ; position: absolute;top: 0 ">
+            <!--Dayspedia.com widget-->
+            <div ampm="true" cityid="9947" class="DPDC bg-danger" host="https://dayspedia.com"
+                 id="dayspedia_widget_3d64e3541c092443"
+                 lang="en" nightsign="true" style="background-image: none;  "
+                 sun="false">
+
+                <style id="dayspedia_widget_3d64e3541c092443_style" media="screen">
+                    /*COMMON*/
+                    .DPDC {
+                        display: table;
+                        position: relative;
+                        box-sizing: border-box;
+                        font-size: 100.01%;
+                        font-style: normal;
+                        font-family: Arial;
+                        background-position: 50% 50%;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        overflow: hidden;
+                        user-select: none
+                    }
+
+                    .DPDCh, .DPDCd {
+                        width: fit-content;
+                        line-height: 1.4
+                    }
+
+                    .DPDCh {
+                        margin-bottom: 1em
+                    }
+
+                    .DPDCd {
+                        margin-top: .24em
+                    }
+
+                    .DPDCt {
+                        line-height: 1
+                    }
+
+                    .DPDCth, .DPDCtm, .DPDCts {
+                        display: inline-block;
+                        vertical-align: text-top;
+                        white-space: nowrap
+                    }
+
+                    .DPDCth {
+                        min-width: 1.15em
+                    }
+
+                    .DPDCtm, .DPDCts {
+                        min-width: 1.44em
+                    }
+
+                    .DPDCtm::before, .DPDCts::before {
+                        display: inline-block;
+                        content: ':';
+                        vertical-align: middle;
+                        margin: -.34em 0 0 -.07em;
+                        width: .32em;
+                        text-align: center;
+                        opacity: .72;
+                        filter: alpha(opacity=72)
+                    }
+
+                    .DPDCt12 {
+                        display: inline-block;
+                        vertical-align: text-top;
+                        font-size: 40%
+                    }
+
+                    .DPDCdm::after {
+                        content: ' '
+                    }
+
+                    .DPDCda::after {
+                        content: ', '
+                    }
+
+                    .DPDCdt {
+                        margin-right: .48em
+                    }
+
+                    .DPDCtn {
+                        display: inline-block;
+                        position: relative;
+                        width: 13px;
+                        height: 13px;
+                        border: 2px solid;
+                        border-radius: 50%;
+                        overflow: hidden
+                    }
+
+                    .DPDCtn > i {
+                        display: block;
+                        content: '';
+                        position: absolute;
+                        right: 33%;
+                        top: -5%;
+                        width: 85%;
+                        height: 85%;
+                        border-radius: 50%
+                    }
+
+                    .DPDCs {
+                        margin: .96em 0 0 -3px;
+                        font-size: 90%;
+                        line-height: 1;
+                        white-space: nowrap
+                    }
+
+                    .DPDCs sup {
+                        padding-left: .24em;
+                        font-size: 65%
+                    }
+
+                    .DPDCsl::before, .DPDCsl::after {
+                        display: inline-block;
+                        opacity: .4
+                    }
+
+                    .DPDCsl::before {
+                        content: '~';
+                        margin: 0 .12em
+                    }
+
+                    .DPDCsl::after {
+                        content: '~';
+                        margin: 0 .24em
+                    }
+
+                    .DPDCs svg {
+                        display: inline-block;
+                        vertical-align: bottom;
+                        width: 1.2em;
+                        height: 1.2em;
+                        opacity: .48
+                    }
+
+                    /*CUSTOM*/
+
+                    .DPDC {
+                        width: auto;
+                        padding: 7px;
+                        background-color: #ffffff;
+                        /*border: 1px solid #343434;*/
+                        border-radius: 8px
+                    }
+
+                    /* widget width, padding, background, border, rounded corners */
+                    .DPDCh {
+                        color: #007DBF;
+                        font-weight: normal
+                    }
+
+                    /* headline color, font-weight*/
+                    .DPDCt, .DPDCd {
+                        color: #343434;
+                        font-weight: bold
+                    }
+
+                    /* time & date color, font-weight */
+                    .DPDCtn {
+                        border-color: #343434
+                    }
+
+                    /* night-sign color = time & date color */
+                    .DPDCtn > i {
+                        background-color: #343434
+                    }
+
+                    /* night-sign color = time & date color */
+                    .DPDCt {
+                        font-size: 20px
+                    }
+
+                    /* time font-size */
+                    .DPDCh, .DPDCd {
+                        font-size: 16px
+                    }
+
+                    /* headline & date font-size */
+                </style>
+
+
+                <a class="DPl w-100" href="https://dayspedia.com/time/lk/Colombo/"
+                   style="display:block!important;text-decoration:none!important;border:none!important;cursor:pointer!important;background:transparent!important;line-height:0!important;text-shadow:none!important;position:absolute;z-index:1;top:0;right:0;bottom:0;left:0"
+                   target="_blank">
+                    <svg style="position:absolute;right:8px;bottom:0;width:16px;height:16px" viewbox="0 0 16 16"
+                         xmlns="http://www.w3.org/2000/svg">
+
+                    </svg>
+
+                </a>
+                <div class="DPDCh d-none"
+                     style="text-align: center; margin-left: auto; margin-right: auto; font-weight: bold; font-size: 12px;">
+                    Current Time in Colombo
+                </div>
+                <div class="DPDCt"
+                     style="text-align: center; margin-left: auto; margin-right: auto; font-weight: bold;">
+                    <span class="DPDCth">09</span><span class="DPDCtm">47</span><span class="DPDCts">14</span><span
+                        class="DPDCt12">pm</span>
+                </div>
+                <div class="DPDCd"
+                     style="text-align: center; margin-left: auto; margin-right: auto; font-weight: bold;">
+                    <span class="DPDCdt">Sun, January 23</span><span class="DPDCtn" style=""><i></i></span>
+                </div>
+
+                <div class="DPDCs" style="display: none; text-align: center; margin-left: auto; margin-right: auto;">
+		<span class="DPDCsr">
+			<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path
+                    d="M12,4L7.8,8.2l1.4,1.4c0,0,0.9-0.9,1.8-1.8V14h2c0,0,0-3.3,0-6.2l1.8,1.8l1.4-1.4L12,4z"></path><path
+                    d="M6.8,15.3L5,13.5l-1.4,1.4l1.8,1.8L6.8,15.3z M4,21H1v2h3V21z M20.5,14.9L19,13.5l-1.8,1.8l1.4,1.4L20.5,14.9z M20,21v2h3 v-2H20z M6.1,23C6,22.7,6,22.3,6,22c0-3.3,2.7-6,6-6s6,2.7,6,6c0,0.3,0,0.7-0.1,1H6.1z"></path></svg>
+			07:14<sup>am</sup>
+		</span>
+                    <span class="DPDCsl">12:03</span>
+                    <span class="DPDCss">
+			<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path
+                    d="M12,14L7.8,9.8l1.4-1.4c0,0,0.9,0.9,1.8,1.8V4h2c0,0,0,3.3,0,6.2l1.8-1.8l1.4,1.4L12,14z"></path><path
+                    d="M6.8,15.3L5,13.5l-1.4,1.4l1.8,1.8L6.8,15.3z M4,21H1v2h3V21z M20.5,14.9L19,13.5l-1.8,1.8l1.4,1.4L20.5,14.9z M20,21v2h3 v-2H20z M6.1,23C6,22.7,6,22.3,6,22c0-3.3,2.7-6,6-6s6,2.7,6,6c0,0.3,0,0.7-0.1,1H6.1z"></path></svg>
+			07:18<sup>pm</sup>
+		</span>
+                </div>
+                <script>
+                    var s, t;
+                    s = document.createElement("script");
+                    s.type = "text/javascript";
+                    s.src = "//cdn.dayspedia.com/js/dwidget.min.v7c6abcf8.js";
+                    t = document.getElementsByTagName('script')[0];
+                    t.parentNode.insertBefore(s, t);
+                    s.onload = function () {
+                        window.dwidget = new window.DigitClock();
+                        window.dwidget.init("dayspedia_widget_3d64e3541c092443");
+                    };
+                </script>
+                <!--/DPDC-->
+            </div><!--Dayspedia.com widget ENDS-->
+
+        </div>
+    </nav>
+</header>
+<div id="member" style="display: inline">
+    <section class="d-flex justify-content-evenly position-relative " style="height: 90vh;width: 100vw;">
+        <section class="d-flex flex-column justify-content-center" style="width: 50vw">
+            <div class="">
+
+                <div class="mb-3">
+
+                    <label class="col-form-label" for="age"
+                           style="font-family: 'Source Serif 4', sans-serif; font-size: 30px">Search</label>
+
+                    <input class="form-control w-50" id="Search" type="text">
+                    <button class="btn btn-dark mt-3" id="btnSearch">Search</button>
+                    <hr>
+                </div>
+
+            </div>
+            <section class="m-5 position-relative h-50" style="width:100%;">
+                <table class="table table-hover w-100">
+                    <thead class="">
+                    <tr class="">
+                        <th scope="col">ID</th>
+                        <th scope="col">Member</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Contact</th>
+                    </tr>
+                    </thead>
+                    <tbody id="memTable">
+
+                    </tbody>
+                </table>
+            </section>
+        </section>
+        <div class="w-25 h-75 position-relative" style="top: 60px">
+            <form>
+                <div class="mb-2">
+                    <label class="col-form-label" for="id"
+                           style="font-family: 'Source Serif 4', sans-serif;">ID:</label>
+                    <input class="form-control" id="id" type="text">
+                    <small id="error1">"Ex :- M0001"</small>
+                </div>
+                <div class="mb-2">
+                    <label class="col-form-label" for="name"
+                           style="font-family: 'Source Serif 4', sans-serif;">Name:</label>
+                    <input class="form-control" id="name" type="text">
+                    <small id="error2">Name Should Be Least 3Character Long</small>
+                </div>
+                <div class="mb-2">
+                    <label class="col-form-label" for="age"
+                           style="font-family: 'Source Serif 4', sans-serif;">Age:</label>
+                    <input class="form-control" id="age" type="text">
+                    <small id="error3">Only Numbers Allowed</small>
+                </div>
+                <div class="mb-2">
+                    <label class="col-form-label" for="contact" style="font-family: 'Source Serif 4', sans-serif;">Contact:</label>
+                    <input class="form-control" id="contact" type="text">
+                    <small id="error4">Only Numbers Allowed</small>
+                </div>
+            </form>
+            <div class="d-flex w-100 justify-content-evenly">
+                <button class="btn btn-warning w-25 " id="btnSave" type="button">SAVE</button>
+                <button class="btn btn-danger w-25 " type="button" id="btnClear">CLEAR</button>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script src="db/DB.js/"></script>
+<script>
+    $('#btnSave').prop("disabled", true);
+    $('#btnClear').prop("disabled", true);
+
+    $("#id").val("M");
+
+    $("#contact").val("0");
+
+    $('#btnSave').click(function () {
+
+        $('#memTable>tr').off("click")
+
+        let memName = $('#name').val();
+        let memAge = $('#age').val();
+        let memContact = $('#contact').val();
+        let memId = $('#id').val();
+
+        //member object
+        let memberObject={
+            id:memId,
+            name:memName,
+            age:memAge,
+            contact:memContact
+        };
+        console.log(memberObject);
+        MemberDB.push(memberObject);
+
+        loadAllMembers();
+
+        $('#btnSave').prop("disabled", true);
+
+        /*$('#memTable>tr').dblclick(function () {
+            $(this).remove();
+        });*/
+
+        /*$('#memTable>tr').click(function () {
+            let Id = $(this).children(":nth-child(1)").text();
+            let Name = $(this).children(":nth-child(2)").text();
+            let Age = $(this).children(":nth-child(3)").text();
+            let Contact = $(this).children(":nth-child(4)").text();
+
+            $('#name').val(Name);
+            $('#age').val(Age);
+            $('#contact').val(Contact);
+            $('#id').val(Id);
+        });*/
+
+    });
+    
+    function loadAllMembers(event) {
+        $("#memTable").empty();
+        for (var i in MemberDB) {
+            //add array data to row
+            let row = `<tr><td> ${MemberDB[i].id} </td><td>${MemberDB[i].name}</td><td>${MemberDB[i].age}</td><td>${MemberDB[i].contact}</td></tr>`;
+            //add row to table
+            $('#memTable').append(row);
+
+        }
+    }
+    
+    
+
+
+    $("#id").keyup(function (event) {
+        let input = $("#id").val();
+        let RegExp = /^(M)[0-9]{4}$/;
+        if (RegExp.test(input)) {
+            $("#id").css("border", "2px solid blue");
+            $("#error1").text("  ");
+            if (event.key == "Enter") {
+                $("#name").focus();
+            }
+        } else {
+            $("#id").css("border", "2px solid red");
+            $("#error1").text("Not match Ex:- M0001");
+            $("#error1").css("color", "red");
+        }
+    });
+
+    $("#name").keyup(function (event) {
+
+        let RegExp = /^[A-z]{3,30}$/;
+        let input = $("#name").val();
+        if (RegExp.test(input)) {
+            $("#name").css("border", "2px solid blue");
+            $("#error2").text("  ");
+            if (event.key == "Enter") {
+                $("#age").focus();
+            }
+        } else {
+            $("#name").css("border", "2px solid red");
+            $("#error2").text("To Short !");
+            $("#error2").css("color", "red");
+        }
+    });
+
+    $("#age").keyup(function (event) {
+
+        let RegExp = /^[0-9]{2}$/;
+        let input = $("#age").val();
+        if (RegExp.test(input)) {
+            $("#age").css("border", "2px solid blue");
+            $("#error3").text("  ");
+            if (event.key == "Enter") {
+                $("#contact").focus();
+            }
+        } else {
+            $("#age").css("border", "2px solid red");
+            $("#error3").text("Please Not Only Two Number Allowed !");
+            $("#error3").css("color", "red");
+        }
+    });
+
+    $("#contact").keyup(function (event) {
+
+        let RegExp = /^[0-9]{10}$/;
+        let input = $("#contact").val();
+        if (RegExp.test(input)) {
+            $("#contact").css("border", "2px solid blue");
+            $("#error4").text("  ");
+            $('#btnSave').prop("disabled", false);
+            if (event.key == "Enter") {
+                $("#btnSave").focus();
+            }
+        } else {
+            $("#contact").css("border", "2px solid red");
+            $("#error4").text("Please Note Only Ten Numbers Allowed !");
+            $("#error4").css("color", "red");
+        }
+    });
+
+    $("#btnClear").click(function () {
+        $("#id").val("");
+        $("#name").val("");
+        $("#age").val("");
+        $("#contact").val("");
+        $("#btnSave").prop("disabled",true);
+        $("#btnClear").prop("disabled",true);
+    });
+
+    $("#btnSearch").click(function () {
+        let searchID = $('#Search').val();
+        var memberID = searchMember(searchID);
+        if (memberID){
+            $('#id').val(memberID.id);
+            $('#name').val(memberID.name);
+            $('#age').val(memberID.age);
+            $('#contact').val(memberID.contact);
+        }
+
+
+
+    });
+    function searchMember(searchID) {
+        for (var  i of MemberDB){
+            if (i.id==searchID){
+                return i;
+            }
+        }
+    }
+</script>
+</body>
+</html>

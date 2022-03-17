@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<style>
+    body>section{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body>section>div {
+        bottom: 0;
+        position: relative;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        border: solid black 1px;
+        animation-name: transform;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+        @keyframes transform {
+          /*0%,10%{
+              height: 75px;
+              width: 75px;
+              opacity: 80%;
+              border: solid black 3px;
+          }
+            50%,60%{
+                height: 150px;
+                width: 150px;
+                opacity: 50%;
+                border: solid black 2px;
+            }
+            75%{
+                height: 200px;
+                width: 200px;
+                opacity: 30%;
+                border: solid black 1px;
+            }
+            100%{
+                height: 250px;
+                width: 250px;
+                opacity: 0%;
+                border: solid black 1px;*/
+            from{
+                height: 50px;
+                width: 50px;
+                opacity: 80%;
+                border: solid black 3px;
+            }
+            to{
+                height: 250px;
+                width: 250px;
+                opacity: 0%;
+                border: dotted black 1px;
+            }
+        }
+
+</style>
+<body>
+<section>
+    <div></div>
+</section>
+</body>
+</html>

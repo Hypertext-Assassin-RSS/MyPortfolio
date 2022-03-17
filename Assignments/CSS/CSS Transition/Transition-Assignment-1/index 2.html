@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case </title>
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<style>
+    body > section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+        height: 701px;
+    }
+
+    body > section > div {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #00A0C6;
+        margin-top: 20px;
+        width: 170px;
+        color: white;
+        margin-left: -85px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    body > section > div:hover {
+        margin-left: 0;
+        transition-duration: 1s;
+    }
+
+    .image {
+        position: relative;
+        right: 0;
+    }
+</style>
+<body>
+<section>
+    <div><h5>Menu One</h5><img class="image" srcset="assets/icons8_contact_480px.png 10x" alt=""></div>
+    <div><h5>Menu Two</h5><img srcset="assets/icons8_delivery_480px.png 10x" alt=""></div>
+    <div><h5>Menu Three</h5><img srcset="assets/icons8_bookmark_480px.png 10x" alt=""></div>
+    <div><h5>Menu Four</h5><img srcset="assets/icons8_sheets_480px.png 10x" alt=""></div>
+    <div><h5>Menu Five</h5><img srcset="assets/icons8_add_shopping_cart_480px.png 10x" alt=""></div>
+</section>
+</body>
+</html>

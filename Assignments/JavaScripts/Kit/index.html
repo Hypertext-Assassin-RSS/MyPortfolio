@@ -1,0 +1,142 @@
+<!--Rajith Sanjaya-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KIT</title>
+</head>
+<style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    body>h1{
+        position: absolute;
+        top: 60px;
+        color: #9e6a6a;
+        font-size: 25px;
+    }
+    #line1{
+        width: 900px;
+        height: 0;
+        top: 200px;
+        position: absolute;
+        border:2px solid white;
+    }
+    #line2{
+        width: 900px;
+        height: 0;
+        top: 400px;
+        position: absolute;
+        border:2px solid white;
+    }
+
+    div{
+        position: absolute;
+        background: #ffffff;
+        height: 50px;
+        width: 100px;
+        border-radius: 10px;
+    }
+    body > section:nth-child(3) {
+        display: flex;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        justify-content: space-evenly;
+        width: 800px;
+        height: 80px;
+    }
+
+    #box1,#box2,#box3,#box4,#box5,#box6 {
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        position: relative;
+        border: 1px solid black;
+    }
+
+    #start,#stop{
+        border-radius: 20px;
+        height: 50px;
+        width: 100px;
+        position: relative;
+        color: white;
+        font-size: 20px;
+        margin: 10px;
+        top: 500px;
+    }
+    #start{
+        background: blue;
+    }
+    #stop{
+        background: red;
+    }
+
+
+</style>
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+
+<section>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+    <div id="box5"></div>
+    <div id="box6"></div>
+</section>
+
+
+
+<button id="start" >start</button>
+<button id="stop" >stop</button>
+
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script>
+    var colors = ['red', 'rgba(219, 55, 55, 0.68)', 'rgba(222, 98, 98, 0.68)', 'white'];
+    let count = 0;
+    let revIndex = 0;
+    let timeId;
+
+    $("#start").click(function () {
+        clearInterval(timeId);
+        timeId = setInterval(changeColor, 100);
+    });
+
+    $("#stop").click(function () {
+        clearInterval(timeId);
+    });
+
+    function changeColor() {
+        if (count == 20) {
+            count = 0;
+            revIndex=0;
+        }
+        $("#box1").css('background-color', colors[count]);
+        $("#box2").css('background-color', colors[count - 1]);
+        $("#box3").css('background-color', colors[count - 2]);
+        $("#box4").css('background-color', colors[count - 3]);
+        $("#box5").css('background-color', colors[count - 4]);
+        $("#box6").css('background-color', colors[count - 5]);
+
+        if (count >= 10) {
+            $("#box1").css('background-color', colors[revIndex - 5]);
+            $("#box2").css('background-color', colors[revIndex - 4]);
+            $("#box3").css('background-color', colors[revIndex - 3]);
+            $("#box4").css('background-color', colors[revIndex - 2]);
+            $("#box5").css('background-color', colors[revIndex - 1]);
+            $("#box6").css('background-color', colors[revIndex]);
+            revIndex++;
+        }
+        count++;
+    }
+
+</script>
+</body>
+</html>
