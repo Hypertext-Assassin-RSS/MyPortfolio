@@ -1,29 +1,88 @@
 /*==================== MENU SHOW Y HIDDEN ====================*/
-const navMenu= $("#nav-menu"),
+/*const navMenu= $("#nav-menu"),
     navToggle= $("#nav-toggle"),
-    navClose = $("#nav-close")
+    navClose = $("#nav-close")*/
 
+const navMenu = document.getElementById("nav-menu"),
+    navToggle = document.getElementById("nav-toggle"),
+    navClose = document.getElementById("nav-close")
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
-if (navToggle){
+/*if (navToggle){
     navToggle.click(function () {
        navMenu.css("bottom",0);
     });
+}*/
+
+if (navToggle){
+    navToggle.addEventListener("click",() =>{
+        navMenu.classList.add("show-menu");
+    })
 }
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
-if (navClose){
+/*if (navClose){
     navClose.click(function () {
         navMenu.css("bottom",-240);
     });
+}*/
+if (navClose){
+    navClose.addEventListener("click",()=>{
+       navMenu.classList.remove("show-menu");
+    });
 }
 /*==================== REMOVE MENU MOBILE ====================*/
-const navLink = $(".nav__link");
+/*const navLink = $(".nav__link");
 
 navLink.click(function () {
     navMenu.css("bottom",-240);
+});*/
+const navLink = document.querySelectorAll('.nav__link')
+
+function linkAction(){
+    const navMenu = document.getElementById('nav-menu')
+    // When we click on each nav__link, we remove the show-menu class
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
+
+/*==================== SCROLL ====================*/
+
+$("#btnHome").click(function() {
+    $('html,body').animate({
+            scrollTop: $("#home").offset().top},
+        'slow');
 });
 
+$("#btnAbout").click(function() {
+    $('html,body').animate({
+            scrollTop: $("#about").offset().top},
+        'slow');
+});
+
+$("#btnSkills").click(function() {
+    $('html,body').animate({
+            scrollTop: $("#skills").offset().top},
+        'slow');
+});
+
+$("#btnServices").click(function() {
+    $('html,body').animate({
+            scrollTop: $("#services").offset().top},
+        'slow');
+});
+
+$("#btnPortfolio").click(function() {
+    $('html,body').animate({
+            scrollTop: $("#portfolio").offset().top},
+        'slow');
+});
+
+$("#btnContact").click(function() {
+    $('html,body').animate({
+            scrollTop: $("#contact").offset().top},
+        'slow');
+});
 /*==================== SKILLS FOLD ====================*/
 
 
@@ -159,7 +218,7 @@ function scrollActive(){
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight
         const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
+        let sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
