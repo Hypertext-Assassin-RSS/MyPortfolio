@@ -530,10 +530,15 @@ img {
 .skills__open .skills__list{
     height: max-content;
     margin-bottom: var(--mb-2-5);
+    display: flex;
 }
 
 .skills__open .skills__arrow{
     transform: rotate(-180deg);
+}
+
+.skills__img{
+    width: 40px;
 }
 /*==================== QUALIFICATION ====================*/
 .wrapper {

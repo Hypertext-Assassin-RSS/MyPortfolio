@@ -83,6 +83,12 @@ $("#btnContact").click(function() {
             scrollTop: $("#contact").offset().top},
         'slow');
 });
+
+$("#btnScroll").click(function() {
+    $('html,body').animate({
+            scrollTop: $("#about").offset().top},
+        'slow');
+});
 /*==================== SKILLS FOLD ====================*/
 
 
