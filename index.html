@@ -23,7 +23,7 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
-                            <a href="#Home" class="nav__link " id="btnHome">
+                            <a href="#Home" class="nav__link active-link" id="btnHome">
                                 <i class="uil uil-estate nav__icon"></i>Home
                             </a>
                         </li>
@@ -56,6 +56,10 @@
                     <i class="uil uil-times nav__close" id="nav-close"></i>
                 </div>
                 <div class="nav__btns">
+                    <!--Dark Mode Button-->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
@@ -318,30 +322,6 @@
             </section>
 
             <!--==================== QUALIFICATION ====================-->
-            <!--<section class="qualification__section">
-                <h2 class="section__title">Qualification</h2>
-                <span class="section__subtitle">My Life Work</span>
-
-                <div class="qualification__container container">
-                    <div class="qualification__tabs">
-                        <div class="qualification__button button&#45;&#45;flex">
-                            <i class="uil uil-graduation-cap qualification__icon"></i>
-                            Education
-                        </div>
-
-                        <div class="qualification__button button&#45;&#45;flex">
-                            <i class="uil uil-briefcase-alt qualification__icon"></i>
-                            Work
-                        </div>
-                    </div>
-
-                    <div class="qualification__sections">
-
-                    </div>
-                </div>
-            </section>-->
-
-
             <section class="qualification section">
                 <h2 class="section__title">Qualification</h2>
                 <span class="section__subtitle">My Life Work</span>
@@ -382,12 +362,10 @@
                             <!--==================== QUALIFICATION 2====================-->
                             <div class="qualification__data">
                                 <div></div>
-
                                 <div>
                                     <span class="qualification__rounder"></span>
                                     <span class="qualification__line"></span>
                                 </div>
-
                                 <div>
                                     <h3 class="qualification__title">Technology Section</h3>
                                     <span class="qualification__subtitle">G.C.E A/L</span>
@@ -899,7 +877,9 @@
         </footer>
 
         <!--==================== SCROLL TOP ====================-->
-
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
 
         <!--==================== SWIPER JS ====================-->
         <script src="assets/js/swiper-bundle.min.js"></script>
