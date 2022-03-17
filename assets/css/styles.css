@@ -1302,6 +1302,10 @@ img {
         bottom: -4.5rem;
     }
 
+    #testimonial__swiper-pagination{
+        bottom: 0.5rem;
+    }
+
     .contact__form{
         width: 460px;
     }
