@@ -174,12 +174,20 @@ $("#button__forntend").click(function () {
     $("#Frontend__Services__model").css("visibility","visible");
 });
 
+$("#button__designer").click(function () {
+    $("#Designer__model").css("opacity",1);
+    $("#Designer__model").css("visibility","visible");
+});
+
 $(".services__modal-close").click(function () {
     $("#UiUx__services").css("opacity",0);
     $("#UiUx__services").css("visibility","hidden");
 
     $("#Frontend__Services__model").css("opacity",0);
     $("#Frontend__Services__model").css("visibility","hidden");
+
+    $("#Designer__model").css("opacity",0);
+    $("#Designer__model").css("visibility","hidden");
 });
 
 
