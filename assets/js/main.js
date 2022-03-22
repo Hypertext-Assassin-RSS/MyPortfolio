@@ -206,6 +206,23 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
     },
 
 });
+
+
+/*==================== Gallery ====================*/
+
+$(function() {
+    var selectedClass = "";
+    $(".fil-cat").click(function(){
+        selectedClass = $(this).attr("data-rel");
+        $("#portfolioGallery").fadeTo(100, 0.1);
+        $("#portfolioGallery div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
+        setTimeout(function() {
+            $("."+selectedClass).fadeIn().addClass('scale-anm');
+            $("#portfolioGallery").fadeTo(300, 1);
+        }, 300);
+
+    });
+});
 /*==================== TESTIMONIAL ====================*/
 let swiperTestimonial = new Swiper('.testimonial__container', {
     loop:true,
