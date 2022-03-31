@@ -829,72 +829,47 @@
             </section>
 
             <!--==================== Event Gallery ====================-->
-            <section class="gallery section" id="gallery">
+            <section class="  section" id="gallery">
                 <h2 class="section__title">Photo Gallery</h2>
                 <span class="section__subtitle">Memory's of my journey </span>
 
+                <nav class="gallery__nav">
+                    <div class="items">
+                        <span class="item active" data-name="all">All</span>
+                        <span class="item" data-name="events">Events</span>
+                        <span class="item" data-name="captures">Captures</span>
+                        <span class="item" data-name="travels">Travels</span>
+                        <span class="item" data-name="designs">Designs</span>
+                        <span class="item" data-name="works">Works</span>
+                    </div>
+                </nav>
+
                 <div class="gallery__container ">
                     <div class="gallery__content">
-                        <div class="toolbar mb2 mt2">
-                            <a class="btn fil-cat" data-rel="all">  All  Photos</a>
-                            <a class="btn fil-cat" data-rel="web">Event</a>
-                            <a class="btn fil-cat" data-rel="flyers">Work</a>
-                            <a class="btn fil-cat" data-rel="bcards">Personal</a>
+                        <div id="portfolioGallery">
+                            <div class="gallery">
+                                <div class="image" data-name="events"><span><img src="/images/Gallery/Hackathon%2022/alphaCrew.jpg" alt=""></span></div>
+                                <div class="image" data-name="events"><span><img src="/images/Gallery/Hackathon%2022/2nd%20RunnerUp.jpg" alt=""></span></div>
+                                <div class="image" data-name="events"><span><img src="/images/Gallery/Hackathon%2022/Hackathon%2022%20(2).jpg" alt=""></span></div>
+                                <div class="image" data-name="events"><span><img src="/images/Gallery/Hackathon%2022/Hackathon%2022.jpg" alt=""></span></div>
+
+
+
+                            </div>
+
+                            <!-- fullscreen img preview box -->
+                            <div class="preview-box">
+                                <div class="details">
+                                    <span class="title">Image Category: <p></p></span>
+                                    <span class="icon fas fa-times"></span>
+                                </div>
+                                <div class="image-box"><img src="" alt=""></div>
+                            </div>
+                            <div class="shadow"></div>
+
                         </div>
 
-                        <div id="portfolioGallery">
-                            <div class="tile scale-anm web all">
-                                <img src="assets/img/gallery/alphaCrew.jpg" alt="" />
-                            </div>
-                            <div class="tile scale-anm bcards all">
-                                <img src="" alt="" />
-                            </div>
-                            <div class="tile scale-anm web all">
-                                <img src="assets/img/gallery/2nd%20RunnerUp.jpg" alt="" />
-                            </div>
-                            <div class="tile scale-anm web all">
-                                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/codystretch-300x270.jpg" alt="" />
-                            </div>
-                            <div class="tile scale-anm flyers all">
-                                <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190" alt="" />
-                            </div>
-                            <div class="tile scale-anm bcards all">
-                                <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt="" />
-                            </div>
-                            <div class="tile scale-anm flyers all">
-                                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/jti-icons_08-300x172.jpg" alt="" />
-                            </div>
-                            <div class="tile scale-anm flyers all">
-                                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/transmission_01-300x300.jpg" alt="" />
-                            </div>
-                            <div class="tile scale-anm web all">
-                                <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt="" />
-                            </div>
-                            <div class="tile scale-anm flyers all">
-                                <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt="" />
-                            </div>
-                            <div class="tile scale-anm web all">
-                                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/the-ninetys-brand_02-300x300.jpg" alt="" />
-                            </div>
-                            <div class="tile scale-anm bcards all">
-                                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/15-dia_1092-1-300x300.jpg" alt="" />
-                            </div>
-                            <div class="tile scale-anm web all">
-                                <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190" alt="" />
-                            </div>
-                            <div class="tile scale-anm bcards all">
-                                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/emi_haze-300x201.jpg" alt="" />
-                            </div>
-                            <div class="tile scale-anm web all">
-                                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/transmission_01-300x300.jpg" alt="" />
-                            </div>
-                            <div class="tile scale-anm web all">
-                                <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190" alt="" />
-                            </div>
-                            <div class="tile scale-anm bcards all">
-                                <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt="" />
-                            </div>
-                        </div>
+
 
                         <div style="clear:both;"></div>
                     </div>
@@ -1120,5 +1095,6 @@
         <script src="assets/jquery/http_ajax.googleapis.com_ajax_libs_jquery_3.6.0_jquery.js"></script>
         <script src="assets/js/main.js"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </body>
 </html>
