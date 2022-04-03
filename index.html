@@ -7,6 +7,7 @@
         <meta content="Rajith Sanjaya Senanayaka,Software Engineer,Developer ,Freelancer"  name="keywords">
         <meta content="Rajith Sanjay Portfolio" name="description">
         <link rel='stylesheet prefetch' href='https://npmcdn.com/basscss@8.0.0/css/basscss.min.css'>
+        <link rel="stylesheet" href="assets/css/http_necolas.github.io_normalize.css_8.0.1_normalize.css">
         <meta name="color" content="#6e57e0" />
         <!--==================== UNICONS ====================-->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -19,6 +20,13 @@
         <title>Rajith Sanjaya</title>
     </head>
     <body>
+
+    <section class="loader_container">
+        <div class="loader_background">
+            <div class="Loading"></div>
+        </div>
+    </section>
+    <section class="content">
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
@@ -1086,6 +1094,7 @@
         <a href="#" class="scrollup" id="scroll-up">
             <i class="uil uil-arrow-up scrollup__icon"></i>
         </a>
+    </section>
 
         <!--==================== SWIPER JS ====================-->
         <script src="assets/js/swiper-bundle.min.js"></script>
@@ -1096,5 +1105,11 @@
         <script src="assets/js/main.js"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        $(window).on('load',function(){
+            $(".loader_container").fadeOut(1000);
+            $(".content").fadeIn(1000);
+        });
+    </script>
     </body>
 </html>
