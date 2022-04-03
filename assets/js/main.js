@@ -31,6 +31,12 @@ if (navClose){
        navMenu.classList.remove("show-menu");
     });
 }
+/*==================== LOADER ====================*/
+$(window).on('load',function(){
+    $(".loader_container").fadeOut(1000);
+    $(".content").fadeIn(1000);
+
+});
 /*==================== REMOVE MENU MOBILE ====================*/
 /*const navLink = $(".nav__link");
 

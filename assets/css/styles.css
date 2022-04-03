@@ -157,6 +157,7 @@ img {
 .section__title,
 .section__subtitle {
   text-align: center;
+    margin-bottom: .5rem;
 }
 
 /*==================== LAYOUT ====================*/
@@ -274,15 +275,15 @@ img {
 }
 
 /*==================== LOADER ====================*/
-.content{
+./*content{
     display: none;
-}
+}*/
 
 .loader_container{
     position: absolute;
     width: 98vw;
     height: 98vh;
-    animation: pulse 2s infinite;
+    /*animation: pulse 2s infinite;*/
     overflow: hidden;
 }
 

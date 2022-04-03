@@ -11,5 +11,6 @@
     <orderEntry type="library" name="line" level="application" />
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="normalize" level="application" />
+    <orderEntry type="library" name="swiper" level="application" />
   </component>
 </module>
