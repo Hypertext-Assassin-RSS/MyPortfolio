@@ -1008,6 +1008,13 @@ img {
     justify-content: space-between;
 }
 
+.items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .gallery__nav{
     display: flex;
@@ -1047,7 +1054,7 @@ body{
 }
 .items span{
     padding: 7px 25px;
-    font-size: var(--font-semi-bold);
+    font-size: 0.65em;
     font-weight: 500;
     cursor: pointer;
     color: #007bff;
