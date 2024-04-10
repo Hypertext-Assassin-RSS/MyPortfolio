@@ -1448,6 +1448,7 @@ body {
 .no-scroll {
     overflow: hidden;
  }
+ 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 350px) {
