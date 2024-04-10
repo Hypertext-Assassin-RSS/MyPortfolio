@@ -1445,6 +1445,9 @@ body {
     background-color: var(--text-color-light);
 }
 
+.no-scroll {
+    overflow: hidden;
+ }
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 350px) {

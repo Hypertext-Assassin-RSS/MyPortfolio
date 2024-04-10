@@ -42,6 +42,7 @@ function removeLoader(){
     $( "#loadingDiv" ).fadeOut(500, function() {
         // fadeOut complete. Remove the loading div
         $( "#loadingDiv" ).remove(); //makes page more lightweight
+        document.body.classList.remove('no-scroll');
         // element.style.display = 'inline'
     });
 }
