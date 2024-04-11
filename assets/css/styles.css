@@ -1039,7 +1039,9 @@ img {
 .gallery__nav {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: var(--mb-3);
+    width: 100vw;
 }
 
 .gallery__container {
@@ -1450,7 +1452,38 @@ body {
  
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 375px) {
+
+
+    .items span {
+        font-size: 0.56em;
+        font-weight: 500;
+        cursor: pointer;
+        color: #007bff;
+        border-radius: 50px;
+        border: 2px solid #007bff;
+        transition: all 0.3s ease;
+    }
+
+    .gallery__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: var(--mb-3);
+        width: 92vw;
+        padding-right: 0em;
+    }
+
+    .items {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1em;
+        width: 100%;
+    }
+
+
     .container {
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
