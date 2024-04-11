@@ -1022,11 +1022,9 @@ img {
 }
 
 /*==================== Gallery ====================*/
-.wrapper .items {
-    display: flex;
-    max-width: 720px;
-    width: 100%;
-    justify-content: space-between;
+ 
+.item{
+    margin-left: 1em;
 }
 
 .items {
@@ -1034,6 +1032,7 @@ img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 1em;
 }
 
 
